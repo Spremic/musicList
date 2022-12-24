@@ -30,7 +30,7 @@ nav {
 .sectionDesing p {
   font-size: 25px;
   position: relative;
-  top: 15%;
+  top: 35%;
   transform: (-50%, -50%);
 }
 .sectionDesing h2 {
@@ -41,6 +41,7 @@ nav {
 .flexDesing img {
   margin-left: -80px;
   width: 60vw;
+
 }
 .flexDesingR img {
   width: 40vw;
@@ -53,6 +54,7 @@ nav {
 .divDesing {
   width: 30%;
   margin-left: 5%;
+  height: 1%;
 }
 .divDesingR {
   margin-right: -300px;
@@ -75,4 +77,18 @@ form {
   margin-top: 50px;
   display: grid;
   place-items: center;
+}
+
+/*___--------------------- margine ---------------*/
+#aboutDiv  {
+  margin-top: 4%;
+}
+#whyMeDiv {
+  margin-top: 4%;
+}
+#advantagesDiv{
+  margin-top: 4%;
+}
+#supportDiv {
+  margin-top: 4%;
 }
