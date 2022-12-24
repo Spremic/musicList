@@ -2,8 +2,8 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  color: #000000;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #3d2e2e;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 #navContainer img {
   width: 100vw;
@@ -18,19 +18,19 @@ nav {
 }
 .sectionDesing {
   margin-top: 30px;
-  border-top: 1px dotted rgb(13, 42, 104);
+  border-top: 1.5px outset rgb(13, 42, 104);
 }
 #contact {
-  border-top: 1px dotted rgb(13, 42, 104);
+  border-top: 2px dotted rgb(13, 42, 104);
 }
 .sectionDesing div {
   display: flex;
   justify-items: baseline;
 }
 .sectionDesing p {
-    font-size: 20px;
+  font-size: 25px;
   position: relative;
-  top: 25%;
+  top: 15%;
   transform: (-50%, -50%);
 }
 .sectionDesing h2 {
@@ -42,17 +42,37 @@ nav {
   margin-left: -80px;
   width: 60vw;
 }
+.flexDesingR img {
+  width: 40vw;
+  margin-left: 340px;
+}
 .sectionDesing div {
   display: flex;
   justify-items: baseline;
 }
 .divDesing {
-  margin-left: -40px;
+  width: 30%;
+  margin-left: 5%;
 }
-/* .sectionDesingR img {
-    width: 50vw;
-} */
+.divDesingR {
+  margin-right: -300px;
+  width: 50%;
+}
 
 .divDesingR {
   margin-left: 40px;
+}
+#contactInfo {
+  margin: auto;
+  width: 30%;
+  display: grid;
+  place-items: center;
+}
+#contactInfo p {
+  font-size: 20px;
+}
+form {
+  margin-top: 50px;
+  display: grid;
+  place-items: center;
 }
