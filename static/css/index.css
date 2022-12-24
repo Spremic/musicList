@@ -1,13 +1,45 @@
-*{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
-
+#navContainer img {
+  width: 100vw;
+  max-width: 100%;
+}
 h1 {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 nav {
-    display: none;
+  display: none;
+}
+
+.sectionDesing div {
+  display: flex;
+  justify-items: baseline;
+}
+.sectionDesing p {
+  position: relative;
+  top: 30%;
+  transform: (-50%, -50%);
+}
+.sectionDesing h2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+.flexDesing img {
+  margin-left: -80px;
+  width: 60vw;
+}
+.sectionDesing div {
+  display: flex;
+  justify-items: baseline;
+}
+.divDesing {
+  margin-left: -40px;
+}
+.divDesingR {
+    
 }
