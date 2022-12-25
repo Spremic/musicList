@@ -2,6 +2,8 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+}
+body {
   color: #3d2e2e;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -10,25 +12,42 @@
   max-width: 100%;
 }
 h1 {
+  margin-left: 20px;
   display: flex;
-  justify-content: center;
+  font-family: Brush Script MT;
 }
-nav {
-  display: none;
+header {
+  display: flex;
+  background-color: whitesmoke;
 }
+ul {
+  display: flex;
+  list-style: none;
+  margin: 10px 10px 10px 10px;
+}
+li {
+  margin-left: 25px;
+  list-style-type: none;
+}
+a:link,
+a:visited {
+  color: #3d2e2e;
+  text-decoration: none;
+}
+
 .sectionDesing {
   margin-top: 30px;
   border-top: 1.5px outset rgb(13, 42, 104);
 }
 #contact {
-  border-top: 2px dotted rgb(13, 42, 104);
+  border-top: 1.5px outset wheat;
 }
 .sectionDesing div {
   display: flex;
   justify-items: baseline;
 }
 .sectionDesing p {
-  font-size: 25px;
+  font-size: 22px;
   position: relative;
   top: 35%;
   transform: (-50%, -50%);
@@ -41,7 +60,6 @@ nav {
 .flexDesing img {
   margin-left: -80px;
   width: 60vw;
-
 }
 .flexDesingR img {
   width: 40vw;
@@ -64,31 +82,94 @@ nav {
 .divDesingR {
   margin-left: 40px;
 }
+#contact {
+  display: flex;
+  justify-items: end;
+  background-color: #6a4fca;
+  height: 400px;
+  margin-top: 60px;
+}
+
 #contactInfo {
-  margin: auto;
-  width: 30%;
-  display: grid;
-  place-items: center;
+  width: 40%;
+  margin-left: 6%;
+  margin-top: 5%;
 }
 #contactInfo p {
   font-size: 20px;
 }
-form {
-  margin-top: 50px;
+
+#contactDiv {
+  margin-top: 5%;
+  margin-left: 15%;
+}
+footer {
+  background-color: rgba(0, 0, 0, 0.774);
+}
+footer p {
   display: grid;
   place-items: center;
+  cursor: pointer;
+  color: rgba(245, 245, 245, 0.322);
+  height: 100%;
 }
-
 /*___--------------------- margine ---------------*/
-#aboutDiv  {
+#aboutDiv {
   margin-top: 4%;
 }
 #whyMeDiv {
   margin-top: 4%;
 }
-#advantagesDiv{
+#advantagesDiv {
   margin-top: 4%;
 }
 #supportDiv {
   margin-top: 4%;
+}
+
+/* -------------------INPUT----------------------------------- */
+input {
+  height: 40px;
+  border: none;
+  width: 100%;
+}
+button {
+  cursor: pointer;
+  background-color: rgba(185, 8, 8, 0.603);
+  border: none;
+
+  margin-top: 10px;
+  width: 40%;
+  height: 30px;
+  border-radius: 12px;
+}
+
+/* ------------------REZOLUCIJA------------------------------ */
+@media only screen and (max-width: 1500px) {
+  .divDesing {
+    width: 45%;
+    margin-left: 1%;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .divDesing p {
+    font-size: 18px;
+  }
+  #contactInfo {
+    width: 50%;
+    margin-left: 3%;
+    margin-top: 5%;
+  }
+  #aboutDiv {
+    margin-top: 2.7%;
+  }
+  #whyMeDiv {
+    margin-top: 4%;
+  }
+  #advantagesDiv {
+    margin-top: 5%;
+  }
+  #supportDiv {
+    margin-top: 4%;
+  }
 }
