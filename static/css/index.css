@@ -132,6 +132,10 @@ input {
   height: 40px;
   border: none;
   width: 100%;
+  border-radius: 10px;
+}
+textarea {
+  border-radius: 4px;
 }
 button {
   cursor: pointer;
@@ -160,6 +164,9 @@ button {
     margin-left: 3%;
     margin-top: 5%;
   }
+  form {
+    margin-top: 5%;
+  }
   #aboutDiv {
     margin-top: 2.7%;
   }
@@ -171,5 +178,74 @@ button {
   }
   #supportDiv {
     margin-top: 4%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  nav {
+    display: none;
+  }
+  .sectionDesing h2 {
+    display: grid;
+    margin-top: 30px;
+  }
+  .flexDesing img {
+    display: grid;
+    margin: auto;
+    width: 80vw;
+  }
+  .flexDesingR {
+    display: grid;
+    margin-left: 5%;
+  }
+  #supportP {
+    width: 170%;
+  }
+  #whyMeP {
+    width: 170%;
+  }
+  .flexDesingR img {
+    margin: auto;
+  }
+  .sectionDesing div {
+    display: grid;
+  }
+  .divDesing {
+    width: 85%;
+    display: grid;
+    margin-left: 10%;
+  }
+  .sectionDesing p {
+    font-size: 18px;
+    position: relative;
+    top: 0%;
+    margin: auto;
+    transform: (-50%, -50%);
+  }
+  .divDesingR {
+    margin-right: -300px;
+    width: 50%;
+  }
+  .divDesingR {
+    margin-left: 40px;
+  }
+  #contact {
+    display: grid;
+    place-content: center;
+    background-color: #6a4fca;
+    height: 400px;
+    margin-top: 60px;
+  }
+  #contactInfo p {
+    display: none;
+  }
+  #contactInfo {
+    position: relative;
+    left: -20%;
+  }
+
+  input {
+    height: 40px;
+    border: none;
+    width: 100%;
   }
 }
