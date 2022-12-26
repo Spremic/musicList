@@ -10,10 +10,11 @@ body {
 #hamburger {
   display: none;
   position: absolute;
-  left: 94%;
-  top: 1%;
-  font-size: 20px;
+  left: 90%;
+  
+  font-size: 30px;
   cursor: pointer;
+  
 }
 #navContainer img {
   width: 100vw;
