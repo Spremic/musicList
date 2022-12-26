@@ -7,6 +7,14 @@ body {
   color: #3d2e2e;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
+#hamburger {
+  display: none;
+  position: absolute;
+  left: 94%;
+  top: 1%;
+  font-size: 20px;
+  cursor: pointer;
+}
 #navContainer img {
   width: 100vw;
   max-width: 100%;
@@ -81,6 +89,17 @@ a:visited {
 
 .divDesingR {
   margin-left: 40px;
+}
+
+.clickReadAll {
+  display: none;
+  color: rgba(0, 0, 0, 0.514);
+  cursor: pointer;
+}
+.closeReadAll {
+  display: none;
+  color: rgba(0, 0, 0, 0.514);
+  cursor: pointer;
 }
 #contact {
   display: flex;
@@ -180,9 +199,13 @@ button {
     margin-top: 4%;
   }
 }
-@media only screen and (max-width: 768px) {
+
+@media only screen and (max-width: 769px) {
   nav {
     display: none;
+  }
+  #hamburger {
+    display: block;
   }
   .sectionDesing h2 {
     display: grid;
@@ -195,7 +218,7 @@ button {
   }
   .flexDesingR {
     display: grid;
-    margin-left: 5%;
+    margin-left: 4%;
   }
   #supportP {
     width: 170%;
@@ -204,7 +227,79 @@ button {
     width: 170%;
   }
   .flexDesingR img {
+    margin-right: 9%;
+  }
+  .sectionDesing div {
+    display: grid;
+  }
+  .divDesing {
+    width: 85%;
+    display: grid;
+    margin-left: 10%;
+  }
+  .sectionDesing p {
+    font-size: 18px;
+    position: relative;
+    top: 0%;
     margin: auto;
+    transform: (-50%, -50%);
+  }
+  .divDesingR {
+    margin-right: -300px;
+    width: 50%;
+  }
+  .divDesingR {
+    margin-left: 40px;
+  }
+  #contact {
+    display: grid;
+    place-content: center;
+    background-color: #6a4fca;
+    height: 400px;
+    margin-top: 60px;
+  }
+  #contactInfo p {
+    display: none;
+  }
+  #contactInfo {
+    position: relative;
+    left: -20%;
+  }
+
+  input {
+    height: 40px;
+    border: none;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 490px) {
+  nav {
+    display: none;
+  }
+  #hamburger {
+    display: block;
+  }
+  .sectionDesing h2 {
+    display: grid;
+    margin-top: 30px;
+  }
+  .flexDesing img {
+    display: grid;
+    margin: auto;
+    width: 80vw;
+  }
+  .flexDesingR {
+    display: grid;
+    margin-left: -2%;
+  }
+  #supportP {
+    width: 170%;
+  }
+  #whyMeP {
+    width: 170%;
+  }
+  .flexDesingR img {
+    margin-right: 5.5%;
   }
   .sectionDesing div {
     display: grid;
