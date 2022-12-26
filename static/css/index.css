@@ -335,7 +335,7 @@ button {
   }
   #contactInfo {
     position: relative;
-    left: -25%;
+    margin: auto;
   }
 
   input {
