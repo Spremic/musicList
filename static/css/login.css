@@ -7,12 +7,6 @@
 }
 body {
   background-color: #4158d0;
-  background-image: linear-gradient(
-    43deg,
-    #4158d0 0%,
-    #c850c0 46%,
-    #ffcc70 100%
-  );
 }
 #imgLogin img {
   display: none;
@@ -20,9 +14,9 @@ body {
 #loginContainer {
   position: fixed;
   top: 20%;
-  left: 36%;
+  left: 27%;
   background-color: rgba(0, 255, 255, 0.685);
-  width: 30%;
+  width: 45%;
   height: 60%;
   border-radius: 12px;
 }
@@ -73,11 +67,14 @@ button {
   justify-content: center;
   margin-top: 20px;
 }
+
 #instagram img {
+  display: none;
   cursor: pointer;
   width: 3vw;
 }
 #gmail img {
+  display: none;
   width: 5vw;
   cursor: pointer;
 }
@@ -85,7 +82,7 @@ button {
 #gitHub img {
   cursor: pointer;
   margin-top: -7.5%;
-  width: 3.5vw;
+  width: 10vw;
 }
 
 span {
@@ -98,19 +95,12 @@ span {
   * {
     font-size: 18px;
   }
+
   #loginContainer {
-    padding-top: 50px;
-  }
-  #instagram img {
-    width: 2vw;
-    margin-top: -6.5%;
-  }
-  #gmail img {
-    width: 3.5vw;
-    margin-top: -3.5px;
+    padding-top: 60px;
   }
   #gitHub img {
-    width: 2.2vw;
+    width: 5vw;
     margin-top: -5px;
   }
   #contactAdmin p {
@@ -118,9 +108,45 @@ span {
     font-weight: bold;
   }
 }
-@media only screen and (max-width: 320px) {
-    #loginContainer {
-        width: 70%;
-        left: 20%;
-    }
+
+@media only screen and (max-width: 768px) {
+  #loginContainer {
+    width: 80%;
+    left: 10%;
+  }
+  input {
+    width: 250px;
+  }
+  #instagram img {
+    display: none;
+  }
+  #gmail img {
+    width: 12vw;
+    display: none;
+  }
+  #gitHub img {
+    width: 15vw;
+
+    margin-top: -5px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  #loginContainer {
+    width: 90%;
+    left: 5%;
+  }
+  input {
+    width: 250px;
+  }
+  #instagram img {
+    width: 7vw;
+  }
+  #gmail img {
+    width: 10vw;
+  }
+  #gitHub img {
+    width: 20vw;
+    margin-top: -12px;
+  }
 }
