@@ -68,17 +68,6 @@ button {
   margin-top: 20px;
 }
 
-#instagram img {
-  display: none;
-  cursor: pointer;
-  width: 3vw;
-}
-#gmail img {
-  display: none;
-  width: 5vw;
-  cursor: pointer;
-}
-
 #gitHub img {
   cursor: pointer;
   margin-top: -7.5%;
@@ -117,16 +106,9 @@ span {
   input {
     width: 250px;
   }
-  #instagram img {
-    display: none;
-  }
-  #gmail img {
-    width: 12vw;
-    display: none;
-  }
+
   #gitHub img {
     width: 15vw;
-
     margin-top: -5px;
   }
 }
@@ -139,14 +121,15 @@ span {
   input {
     width: 250px;
   }
-  #instagram img {
-    width: 7vw;
-  }
-  #gmail img {
-    width: 10vw;
-  }
+
   #gitHub img {
     width: 20vw;
     margin-top: -12px;
+  }
+}
+
+@media only screen and (max-height: 685px) {
+  img {
+    display: none;
   }
 }
