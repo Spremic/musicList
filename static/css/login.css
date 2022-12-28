@@ -101,7 +101,6 @@ span {
   }
   h1 {
     font-size: 25px;
-
   }
   #contactAdmin p {
     font-size: 18px;
@@ -126,7 +125,7 @@ span {
 
 @media only screen and (max-width: 425px) {
   #loginContainer {
-    width: 270px;
+    width: 310px;
   }
   input {
     width: 250px;
