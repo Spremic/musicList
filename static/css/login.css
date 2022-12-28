@@ -25,10 +25,7 @@ html {
 
 ::-ms-input-placeholder {
   /* Microsoft Edge */
-  color: rgba(48, 21, 21, 0.61);
-}
-#imgLogin img {
-  display: none;
+ color: rgba(48, 21, 21, 0.61);
 }
 #loginContainer {
   background-color: rgba(0, 255, 255, 0.685);
@@ -82,12 +79,12 @@ button {
 #socialMedia {
   display: flex;
   justify-content: center;
-  margin-top: 20px;
+  margin-top: 13px;
 }
 
 #gitHub img {
   cursor: pointer;
-  margin-top: -7.5%;
+  margin-left: 2.5%;
   width: 10vw;
 }
 
