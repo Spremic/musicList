@@ -5,20 +5,22 @@
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   color: rgb(3, 26, 104);
 }
-body {
+html {
   background-color: #4158d0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
 }
 #imgLogin img {
   display: none;
 }
 #loginContainer {
-  position: fixed;
-  top: 20%;
-  left: 27%;
   background-color: rgba(0, 255, 255, 0.685);
-  width: 45%;
-  height: 60%;
+  width: 500px;
   border-radius: 12px;
+  display: flex;
+  flex-direction: column;
 }
 label {
   color: black;
@@ -84,13 +86,22 @@ span {
   * {
     font-size: 18px;
   }
-
+  #loginContainer {
+    width: 790px;
+  }
+  input {
+    width: 380px;
+  }
   #loginContainer {
     padding-top: 60px;
   }
   #gitHub img {
     width: 5vw;
     margin-top: -5px;
+  }
+  h1 {
+    font-size: 25px;
+
   }
   #contactAdmin p {
     font-size: 18px;
@@ -100,11 +111,11 @@ span {
 
 @media only screen and (max-width: 768px) {
   #loginContainer {
-    width: 80%;
+    width: 390px;
     left: 10%;
   }
   input {
-    width: 250px;
+    width: 280px;
   }
 
   #gitHub img {
@@ -115,8 +126,7 @@ span {
 
 @media only screen and (max-width: 425px) {
   #loginContainer {
-    width: 90%;
-    left: 5%;
+    width: 270px;
   }
   input {
     width: 250px;
@@ -125,11 +135,5 @@ span {
   #gitHub img {
     width: 20vw;
     margin-top: -12px;
-  }
-}
-
-@media only screen and (max-height: 685px) {
-  img {
-    display: none;
   }
 }
