@@ -46,6 +46,42 @@ app.post("/api/register", async (req, res) => {
   }
   res.json({ status: "OK" });
 });
+app.post("/api/login", async (req, res) => {
+  const { email, password } = req.body;
+  let emailCheck = await UserUcenik.findOne({ email }).lean();
+  if (!emailCheck) {
+    return res.json({ status: "mail", mail: "Nepostojeca email adresa" });
+  }
+  if (await bcrypt.compare(password, emailCheck.password)) {
+    const token = jwt.sign(
+      {
+        id: emailCheck._id,
+        nameBand: emailCheck.nameBand,
+        email: emailCheck.email,
+        password: emailCheck.password,
+        naslov: emailCheck.naslov,
+        pevac: emailCheck.pevac,
+        tekst: emailCheck.tekst,
+      },
+      JWT_SECRET
+    );
+
+    return res.json({ status: "OK", token: token });
+  } else {
+    return res.json({ status: "password", password: "Pogresna sifra" });
+  }
+});
+app.post("/api/dynamicLoad", async (req, res) => {
+  const { token } = req.body;
+  try {
+    const user = jwt.verify(token, JWT_SECRET);
+    const nameBand = user.nameBand;
+    return res.json({ status: "ok", nameBand });
+  } catch (err) {
+    console.log(err)
+    res.json({ status: "error", error: "greska" });
+  }
+});
 
 app.listen(port, () => {
   console.log(`App is listening on port ${port}`);
