@@ -12,7 +12,14 @@ async function dymicLoad(e) {
       token,
     }),
   }).then((response) => response.json());
+  if (localStorage.getItem("token") == null) {
+    document.location = "login.html";
+  }
+
   if (result.status === "ok") {
     h1.innerHTML = `${result.nameBand}`;
+  }
+  if (result.status == "error") {
+    h1.innerHTML = `Niste prijavljeni`;
   }
 }

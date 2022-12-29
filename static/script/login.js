@@ -24,14 +24,13 @@ async function login(e) {
     document.location = "list.html";
   }
 
-  if (localStorage.getItem("token") !== null) {
-    document.location = "list.html";
-  }
-
   if (result.status === "mail") {
     alert("konje");
   }
   if (result.status === "password") {
     alert("password konju");
   }
+}
+if (localStorage.getItem("token") !== null) {
+  document.location = "list.html";
 }
