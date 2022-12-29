@@ -125,13 +125,13 @@ a:visited {
 }
 footer {
   background-color: rgba(0, 0, 0, 0.774);
+  height: 100%;
 }
 footer p {
   display: grid;
   place-items: center;
-  cursor: pointer;
+
   color: rgba(245, 245, 245, 0.322);
-  height: 100%;
 }
 /*___--------------------- margine ---------------*/
 #aboutDiv {

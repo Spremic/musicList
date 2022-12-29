@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+body {
+  /* background-color: #2bd2ff; */
+  background-color: #181414;
+}
+h1 {
+  display: grid;
+  place-items: center;
+  color: rgb(233, 224, 224);
+}
+
+#container {
+  display: flex;
+  /* justify-content: left; */
+  flex-wrap: wrap;
+}
+section {
+  height: 100px;
+  width: 27%;
+  background-color: rgba(0, 0, 0, 0.959);
+  margin-left: 50px;
+  margin-top: 50px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 0.2px solid rgb(129, 125, 125);
+  color: whitesmoke;
+  margin-right: auto;
+  margin-left: auto;
+}
+.nazivPevaca {
+  color: rgba(255, 255, 255, 0.664);
+}
+.divNazivPesme {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+}
+.popUP {
+  padding: 20px;
+  background: rgb(10, 9, 9);
+  border-radius: 5px;
+  width: 350%;
+  position: relative;
+  /* transition: all 5s ease-in-out; */
+}
+.popUP p {
+  display: grid;
+  place-items: center;
+}
+.pesma .popUP {
+  display: none;
+}
+
+@media only screen and (max-width: 500px) {
+  h1 {
+    font-size: 15px;
+  }
+  section {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  section {
+    width: 45%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  body {
+    width: 80%;
+    margin: auto;
+  }
+}
+/* @media only screen and (min-width: 321px) and (max-width: 500px) {
+  section {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+} */
