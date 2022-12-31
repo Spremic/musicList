@@ -76,10 +76,30 @@ app.post("/api/dynamicLoad", async (req, res) => {
   try {
     const user = jwt.verify(token, JWT_SECRET);
     const nameBand = user.nameBand;
-    return res.json({ status: "ok", nameBand });
+    const naslov = user.naslov;
+    const pevac = user.pevac;
+    const tekst = user.tekst;
+    return res.json({ status: "ok", nameBand, naslov, pevac, tekst });
   } catch (err) {
-    console.log(err)
+    console.log(err);
     res.json({ status: "error", error: "greska" });
+  }
+});
+app.post("/api/addMusic", async (req, res) => {
+  const { token, naslov, pevac, tekst } = req.body;
+  const user = await jwt.verify(token, JWT_SECRET);
+  try {
+    const _id = user.id;
+    await UserUcenik.updateOne(
+      { _id },
+      {
+        $push: { naslov, pevac, tekst },
+      }
+    );
+    console.log(user);
+    res.json({ status: "ok" });
+  } catch (error) {
+    console.log(error);
   }
 });
 

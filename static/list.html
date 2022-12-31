@@ -8,145 +8,51 @@
     <link rel="stylesheet" href="css/list.css" />
   </head>
   <body>
+    <p id="logout"">ODJAVI SE</P>
     <header>
       <h1></h1>
     </header>
-    <div id="container">
-      <section class="pesma">
-        <div class="divNazivPesme">
-          <p>
-            <span class="nazivPesme">Hladno leto</span><br />
-            <span class="nazivPevaca">Lokisha</span>
-          </p>
-        </div>
-        <div class="popUP">
-          <p>
-            Hladno leto ludi grad stigla nas je sudbina stari ja se budim sad
-            jer
-            <br />
-            si srecnog ubila hladno leto ludi grad stigla nas je sudbina stari
-            ja
-            <br />
-            se budim sad jer si srecnog ubila ubila pa papap ap pa prvo memolila
-            <br />
-            pa molima onda me slomila Jednoooooooooooooooooooooooooooooooooo
-            <br />
-            aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-            <br />
-            aaaaaaaaaaaaaaaaa
-          </p>
-        </div>
-      </section>
+    <div id="container"></div>
+    <div id="add">
+      <div id="openMusicModal"><button>Dodaj pesmu</button></div>
 
-      <section class="pesma">
-        <div class="divNazivPesme">
-          <p>
-            <span class="nazivPesme">Hladno leto</span><br />
-            <span class="nazivPevaca">Lokisha</span>
-          </p>
-        </div>
-        <div class="popUP">
-          <p>
-            Hladno leto ludi grad stigla nas je sudbina stari ja se budim sad
-            jer
-            <br />
-            si srecnog ubila hladno leto ludi grad stigla nas je sudbina stari
-            ja
-            <br />
-            se budim sad jer si srecnog ubila ubila pa papap ap pa prvo memolila
-            <br />
-            pa molima onda me slomila
-          </p>
-        </div>
-      </section>
-
-      <section class="pesma">
-        <div class="divNazivPesme">
-          <p>
-            <span class="nazivPesme">Hladno leto</span><br />
-            <span class="nazivPevaca">Lokisha</span>
-          </p>
-        </div>
-        <div class="popUP">
-          <p>
-            Hladno leto ludi grad stigla nas je sudbina stari ja se budim sad
-            jer
-            <br />
-            si srecnog ubila hladno leto ludi grad stigla nas je sudbina stari
-            ja
-            <br />
-            se budim sad jer si srecnog ubila ubila pa papap ap pa prvo memolila
-            <br />
-            pa molima onda me slomila
-          </p>
-        </div>
-      </section>
-
-      <section class="pesma">
-        <div class="divNazivPesme">
-          <p>
-            <span class="nazivPesme">Hladno leto</span><br />
-            <span class="nazivPevaca">Lokisha</span>
-          </p>
-        </div>
-        <div class="popUP">
-          <p>
-            Hladno leto ludi grad stigla nas je sudbina stari ja se budim sad
-            jer
-            <br />
-            si srecnog ubila hladno leto ludi grad stigla nas je sudbina stari
-            ja
-            <br />
-            se budim sad jer si srecnog ubila ubila pa papap ap pa prvo memolila
-            <br />
-            pa molima onda me slomila
-          </p>
-        </div>
-      </section>
-
-      <section class="pesma">
-        <div class="divNazivPesme">
-          <p>
-            <span class="nazivPesme">Hladno leto</span><br />
-            <span class="nazivPevaca">Lokisha</span>
-          </p>
-        </div>
-        <div class="popUP">
-          <p>
-            Hladno leto ludi grad stigla nas je sudbina stari ja se budim sad
-            jer
-            <br />
-            si srecnog ubila hladno leto ludi grad stigla nas je sudbina stari
-            ja
-            <br />
-            se budim sad jer si srecnog ubila ubila pa papap ap pa prvo memolila
-            <br />
-            pa molima onda me slomila
-          </p>
-        </div>
-      </section>
-      <section class="pesma">
-        <div class="divNazivPesme">
-          <p>
-            <span class="nazivPesme">Hladno leto</span><br />
-            <span class="nazivPevaca">Lokisha</span>
-          </p>
-        </div>
-        <div class="popUP">
-          <p>
-            Hladno leto ludi grad stigla nas je sudbina stari ja se budim sad
-            jer
-            <br />
-            si srecnog ubila hladno leto ludi grad stigla nas je sudbina stari
-            ja
-            <br />
-            se budim sad jer si srecnog ubila ubila pa papap ap pa prvo memolila
-            <br />
-            pa molima onda me slomila
-          </p>
-        </div>
-      </section>
+      <div id="addPopUp">
+        <form id="addMusic">
+          <div class="close"><p class="close">&times</p></div>
+          <div>
+            <label for="nazivPesma">Unesite naziv peseme</label><br />
+            <input
+              type="text"
+              id="nazivPesma"
+              name="nazivPesma"
+              placeholder="Unesite naziv pesme"
+            />
+          </div>
+          <br />
+          <div>
+            <label for="imePevac">Unesite ime pevaca</label><br />
+            <input
+              type="text"
+              name="imePevac"
+              id="imePevac"
+              placeholder="Unesite ime pevaca"
+            />
+          </div>
+          <br />
+          <div>
+            <label for="textPesma">Unesite tekst pesme</label><br />
+            <textarea
+              name="textPesma"
+              id="textPesma"
+              cols="50"
+              rows="10"
+            ></textarea>
+          </div>
+          <button id="btnAddMusic" type="action">Dodaj</button>
+        </form>
+      </div>
     </div>
+
     <script src="list.js"></script>
   </body>
 </html>
