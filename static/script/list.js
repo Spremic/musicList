@@ -91,7 +91,7 @@ async function dymicLoad(e) {
       if (document.querySelector(".pessma")) {
         closeSec.forEach((element) => {
           element.addEventListener("click", () => {
-            location.reload()
+            location.reload(e)
           });
         });
       }
