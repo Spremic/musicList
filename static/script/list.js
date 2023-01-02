@@ -40,7 +40,6 @@ async function addMusic(e) {
   }).then((response) => response.json());
   if (result.status === "ok") {
     alert("ubaceno u bazu podataka");
-    
   }
 }
 
@@ -74,6 +73,7 @@ async function dymicLoad(e) {
                 </p>
               </div>
               <div class="popUP">
+              <div class="close" id="closeLyrs"><p class="close">&times</p></div>
                 <pre>
                  ${result.tekst[i]}
                 </pre>
@@ -82,10 +82,19 @@ async function dymicLoad(e) {
           `;
     }
   }
+
   let section = document.querySelectorAll(".pesma");
+  let closeSec = document.querySelectorAll("#closeLyrs");
   section.forEach((e) => {
-    e.addEventListener("click", () => {
+    e.addEventListener("click", async () => {
       e.className = "pessma";
+      if (document.querySelector(".pessma")) {
+        closeSec.forEach((element) => {
+          element.addEventListener("click", () => {
+            location.reload()
+          });
+        });
+      }
     });
   });
 }
