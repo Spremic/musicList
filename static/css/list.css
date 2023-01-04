@@ -51,8 +51,7 @@ section {
   height: 100vh; /* Full height */
   overflow: auto; /* Enable scroll if needed */
 
-background-color: black;
-  
+  background-color: black;
 }
 .popUP pre {
   display: grid;
@@ -106,11 +105,28 @@ background-color: black;
   font-weight: bold;
   cursor: pointer;
 }
+.closeLyrs p {
+  margin-left: -40px;
+  margin-top: 20px;
+}
+header {
+display: grid;
+place-items: center;
+}
+
+header input {
+  height: 35px;
+  border-radius: 10px;
+  border-style: none;
+  margin-top: 10px;
+}
+header input:placeholder-shown {
+  padding-left: 10px;
+}
+
 
 @media only screen and (max-width: 500px) {
-  h1 {
-    font-size: 15px;
-  }
+
   section {
     width: 80%;
     margin-left: auto;

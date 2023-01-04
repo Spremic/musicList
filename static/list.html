@@ -8,9 +8,16 @@
     <link rel="stylesheet" href="css/list.css" />
   </head>
   <body>
-    <p id="logout"">ODJAVI SE</P>
+    <p id="logout">ODJAVI SE</p>
     <header>
       <h1></h1>
+      <input
+        type="text"
+        name="search"
+        id="search"
+        placeholder="pretrazi pesmu..."
+        oninput="Search((this.value).toLowerCase())"
+      />
     </header>
     <div id="container"></div>
     <div id="add">
@@ -18,7 +25,7 @@
 
       <div id="addPopUp">
         <form id="addMusic">
-          <div class="close" ><p class="close">&times</p></div>
+          <div class="close"><p class="close">&times</p></div>
           <div>
             <label for="nazivPesma">Unesite naziv peseme</label><br />
             <input
