@@ -88,6 +88,8 @@ async function dymicLoad(e) {
   section.forEach((e) => {
     e.addEventListener("click", async () => {
       e.className = "pessma";
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
       if (document.querySelector(".pessma")) {
         closeSec.forEach((element) => {
           element.addEventListener("click", () => {
@@ -100,7 +102,6 @@ async function dymicLoad(e) {
 }
 
 ///search bar
-
 
 function Search(item) {
   let collection = document.getElementsByClassName("nazivPesme");
