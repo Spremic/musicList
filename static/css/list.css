@@ -9,10 +9,20 @@ body {
   /* background-color: #2bd2ff; */
   background-color: #181414;
 }
-h1 {
+header {
   display: grid;
   place-items: center;
   color: rgb(233, 224, 224);
+}
+
+header input {
+  height: 35px;
+  border-radius: 10px;
+  border-style: none;
+  margin-top: 10px;
+}
+header input:placeholder-shown {
+  padding-left: 10px;
 }
 
 #container {
@@ -48,7 +58,7 @@ section {
   left: 0;
   top: 0;
   width: 100%; /* Full width */
-  height: 100vh; /* Full height */
+  height: 900%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
 
   background-color: black;
@@ -109,28 +119,22 @@ section {
   margin-left: -40px;
   margin-top: 20px;
 }
-header {
-display: grid;
-place-items: center;
-}
 
-header input {
-  height: 35px;
-  border-radius: 10px;
-  border-style: none;
-  margin-top: 10px;
-}
-header input:placeholder-shown {
-  padding-left: 10px;
-}
+#nazivPesma, #imePevac {
 
+  border: 0.5px solid rgb(16, 12, 31);
+  border-radius: 7px;
+  height: 30px;
+}
 
 @media only screen and (max-width: 500px) {
-
   section {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
+  }
+  textarea {
+    width: 100%;
   }
 }
 
@@ -139,6 +143,9 @@ header input:placeholder-shown {
     width: 45%;
     margin-left: auto;
     margin-right: auto;
+  }
+  textarea {
+    width: 80%;
   }
 }
 @media only screen and (min-width: 1600px) {

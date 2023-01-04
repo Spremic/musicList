@@ -101,6 +101,7 @@ async function dymicLoad(e) {
 
 ///search bar
 
+
 function Search(item) {
   let collection = document.getElementsByClassName("nazivPesme");
   let section = document.querySelectorAll(".pesma");

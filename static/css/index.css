@@ -130,8 +130,7 @@ footer {
 footer p {
   display: grid;
   place-items: center;
-
-  color: rgba(245, 245, 245, 0.322);
+  color: whitesmoke;
 }
 /*___--------------------- margine ---------------*/
 #aboutDiv {
@@ -210,11 +209,11 @@ button {
 
 @media only screen and (max-width: 769px) {
   nav {
-    display: none;
+    display: flex;
   }
-  #hamburger {
+  /* #hamburger {
     display: block;
-  }
+  } */
   .sectionDesing h2 {
     display: grid;
     margin-top: 30px;
@@ -282,11 +281,11 @@ button {
 }
 @media only screen and (max-width: 490px) {
   nav {
-    display: none;
+    display: flex;
   }
-  #hamburger {
+  /* #hamburger {
     display: block;
-  }
+  } */
   .sectionDesing h2 {
     display: grid;
     margin-top: 30px;
