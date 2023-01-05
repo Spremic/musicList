@@ -38,8 +38,34 @@ async function addMusic(e) {
       tekst,
     }),
   }).then((response) => response.json());
+
+  ///validacija
+  let songError = document.querySelector("#songError");
+  let singerError = document.querySelector("#singerError");
+  let txtError = document.querySelector("#txtError");
+  if (result.status === "naslov") {
+    songError.innerHTML = result.naslov;
+    singerError.innerHTML = "";
+    txtError.innerHTML = "";
+    txtError.innerHTML = "";
+  }
+  if (result.status === "pevac") {
+    songError.innerHTML = "";
+    singerError.innerHTML = result.pevac;
+    txtError.innerHTML = "";
+    txtError.innerHTML = "";
+  }
+
+  if (result.status === "tekst") {
+    songError.innerHTML = "";
+    singerError.innerHTML = "";
+    txtError.innerHTML = result.tekst;
+    txtError.innerHTML = "";
+  }
+
   if (result.status === "ok") {
-    alert("ubaceno u bazu podataka");
+    txtError.innerHTML = "Dodato u bazu podataka";
+ 
   }
 }
 
@@ -68,7 +94,7 @@ async function dymicLoad(e) {
       container.innerHTML += `<section class="pesma">
               <div class="divNazivPesme">
                 <p>
-                  <span class="nazivPesme">${result.naslov[i]}</span><br />
+                  <span class="nazivPesme">  ${result.naslov[i]}</span><br />
                   <span class="nazivPevaca">${result.pevac[i]}</span>
                 </p>
               </div>

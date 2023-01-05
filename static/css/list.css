@@ -72,6 +72,11 @@ section {
   display: none;
 }
 
+.writeError {
+  color: red;
+  font-size: 12px;
+}
+
 /* ------------------modal za dodavanje pesme----------------- */
 #openMusicModal {
   position: absolute;

@@ -87,6 +87,19 @@ app.post("/api/dynamicLoad", async (req, res) => {
 });
 app.post("/api/addMusic", async (req, res) => {
   const { token, naslov, pevac, tekst } = req.body;
+  let regexRequired = /[a-zA-Z0-9-,]+/;
+  if (!regexRequired.test(naslov)) {
+    return res.json({ status: "naslov", naslov: "Polje je obavezno" });
+  }
+
+  if (!regexRequired.test(pevac)) {
+    return res.json({ status: "pevac", pevac: "Polje je obavezno" });
+  }
+
+  if (!regexRequired.test(tekst)) {
+    return res.json({ status: "tekst", tekst: "Polje je obavezno" });
+  }
+
   const user = await jwt.verify(token, JWT_SECRET);
   try {
     const _id = user.id;
