@@ -60,7 +60,7 @@ async function addMusic(e) {
     songError.innerHTML = "";
     singerError.innerHTML = "";
     txtError.innerHTML = result.tekst;
-    txtError.innerHTML = "";
+
   }
 
   if (result.status === "ok") {
@@ -94,7 +94,7 @@ async function dymicLoad(e) {
       container.innerHTML += `<section class="pesma">
               <div class="divNazivPesme">
                 <p>
-                  <span class="nazivPesme">  ${result.naslov[i]}</span><br />
+                  <span class="nazivPesme"> ${i+1}  ${result.naslov[i]}</span><br />
                   <span class="nazivPevaca">${result.pevac[i]}</span>
                 </p>
               </div>
